@@ -6,13 +6,14 @@ import { FaArrowRight } from "react-icons/fa";
 import { LuMoveRight } from "react-icons/lu";
 import Typewriter from "typewriter-effect";
 import SignupForm from "@/components/auth/signup-form";
+import Image from "next/image";
 
 export default function Signup() {
   return (
     <div className="signup bg-[#040d21] h-screen">
       <div className="signup_header z-10 relative flex items-center justify-between  h-16 py-3 mx-24 bg-transparent">
         <Link className="signup_header-logo h-full text-white " href="/">
-          <img className=" h-full text-white " src="/logo_white.png" alt="" />
+          <Image className=" h-full text-white " src="/logo_white.png" alt="" />
         </Link>
         <p className=" text-slate-400 text-md flex gap-3">
           Already have an account?
