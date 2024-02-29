@@ -5,9 +5,15 @@ import { LoginSchema } from "@/scripts/schema";
 import { getUserByEmail } from "@/data/user";
 import bcrypt from "bcryptjs";
 import Google from "next-auth/providers/google";
+// import Azure from "next-auth/providers/azure-ad";
 
 export default {
   providers: [
+    // Azure({
+    //   clientId: process.env.AZURE_CLIENT_ID,
+    //   clientSecret: process.env.AZURE_CLIENT_SECRET,
+    //   tenantId: process.env.AZURE_TENANT_ID,
+    // }),
     Google({
       clientId: process.env.GOOGLE_ID,
       clientSecret: process.env.GOOGLE_SECRET,

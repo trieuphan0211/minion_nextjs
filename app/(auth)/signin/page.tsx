@@ -9,7 +9,7 @@ export default function Signin() {
     <div className="signin grid grid-cols-1 p-8 text-sm font-mono">
       <div className="flex flex-col items-center w-80 m-auto">
         <Link href={"/"}>
-          <Image src="/logo.png" className="w-12" alt="" />
+          <Image src="/logo.png" width={48} height={48} alt="Logo" />
         </Link>
         <h1 className="text-2xl py-4">Sign in to Minion</h1>
         <Suspense>
