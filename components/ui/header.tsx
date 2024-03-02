@@ -107,7 +107,7 @@ export default function Header() {
           )}
         </div>
 
-        <SigninButton>
+        <SigninButton mode="modal" asChild>
           <button className="flex items-center font-bold gap-1 hover:text-green-600 group">
             Login
             <RiLoginCircleLine className="group-hover:translate-x-1 transition-all" />

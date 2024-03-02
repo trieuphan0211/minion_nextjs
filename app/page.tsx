@@ -3,7 +3,7 @@ import Header from "../components/ui/header";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="w-full h-full">
       <Header />
       <CurriculumVitae />
     </main>

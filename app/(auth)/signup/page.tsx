@@ -13,7 +13,13 @@ export default function Signup() {
     <div className="signup bg-[#040d21] h-screen">
       <div className="signup_header z-10 relative flex items-center justify-between  h-16 py-3 mx-24 bg-transparent">
         <Link className="signup_header-logo h-full text-white " href="/">
-          <Image className=" h-full text-white " src="/logo_white.png" alt="" />
+          <Image
+            className=" h-full text-white "
+            src="/logo_white.png"
+            width={64}
+            height={64}
+            alt=""
+          />
         </Link>
         <p className=" text-slate-400 text-md flex gap-3">
           Already have an account?

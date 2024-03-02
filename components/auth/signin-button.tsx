@@ -1,6 +1,15 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import SigninForm from "@/components/auth/signin-form";
 
 interface SigninButtonProps {
   children: React.ReactNode;
@@ -18,7 +27,14 @@ export default function SigninButton({
     router.push("/signin");
   };
   if (mode === "modal") {
-    return <span></span>;
+    return (
+      <Dialog>
+        <DialogTrigger asChild={asChild}>{children}</DialogTrigger>
+        <DialogContent className="p-0 w-auto bg-transparent border-none">
+          <SigninForm />
+        </DialogContent>
+      </Dialog>
+    );
   }
   return (
     <span onClick={onClick} className="cursor-pointer">
